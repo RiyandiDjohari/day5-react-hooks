@@ -41,8 +41,8 @@ const Media = () => {
                   key={post.id + index}
                   className="max-w-[333px] rounded-lg flex flex-wrap flex-col gap-4"
                 >
-                  <div className="flex gap-4 items-center justify-center px-4 py-12 w-full bg-primary rounded-lg">
-                    <img src="/vite.svg" alt="image" className="h-[180px]" />
+                  <div className="flex gap-4 items-center justify-center w-full bg-primary rounded-lg">
+                    <img src={`https://picsum.photos/id/${post.id}/333/300`} alt="image" className="object-fit rounded-lg" />
                   </div>
                   <h2 className="font-bold text-lg mb-2">{post.title}</h2>
                   <p className="text-sm font-semibold mt-auto">{post.body}</p>
