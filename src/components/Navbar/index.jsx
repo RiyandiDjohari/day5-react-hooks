@@ -1,8 +1,9 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { navbarItems } from "../../constants";
 import logo from "/vite.svg";
 import { ThemeContext } from "../../context/ThemeContext";
+import { Moon, Sun } from "@phosphor-icons/react";
 
 const Navbar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -69,10 +70,10 @@ const Navbar = () => {
             Log out
           </button>
           <button
-            className="py-2 px-4 rounded-full bg-white border border-secondary text-secondary hover:text-white hover:bg-secondary hover:border-transparent "
+            className="p-2 rounded-full bg-white border border-secondary text-secondary hover:text-white hover:bg-secondary hover:border-transparent "
             onClick={handleChangeTheme}
           >
-            {theme}
+            {theme == 'dark' ? <Moon size={24}/> : <Sun size={24} /> }
           </button>
         </div>
       </div>

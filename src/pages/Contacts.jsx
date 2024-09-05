@@ -1,11 +1,17 @@
 import React from "react";
 import Layout from "../components/Layout";
+import Feedback from "../components/FeedbackForm";
 
 const Contacts = () => {
   return (
     <Layout>
       <section className="dark:bg-[#002B36] dark:text-gray-200">
         <div className="container mx-auto p-4 py-8">
+          <div className="mb-12">
+            <h2 className="font-bold text-3xl mb-2">Kritik dan Saran</h2>
+            <p className="mb-4">Silahkan masukan kritik dan saran Anda.</p>
+            <Feedback />
+          </div>
           <div>
             <h2 className="font-bold text-3xl mb-2">Hubungi Kami</h2>
             <p>Memiliki pertanyaan lebih lanjut seputar PaDi UMKM?</p>
@@ -27,13 +33,8 @@ const Contacts = () => {
             <div className="basis-1/2 border px-6 py-8 rounded-lg flex flex-col">
               <h3 className="text-xl font-bold mb-1">Kantor Kami</h3>
               <h4 className="text-lg font-semibold">PaDi UMKM Headquarters</h4>
-              <h5 className="text-base font-semibold">
-                Gedung Telkom Direktorat Business and Technology
-              </h5>
-              <p className="text-sm">
-                Jln. Prof. Dr. Soepomo No. 139, Jakarta Selatan, DKI Jakarta,
-                12810 Indonesia
-              </p>
+              <h5 className="text-base font-semibold">Gedung Telkom Direktorat Business and Technology</h5>
+              <p className="text-sm">Jln. Prof. Dr. Soepomo No. 139, Jakarta Selatan, DKI Jakarta, 12810 Indonesia</p>
             </div>
           </div>
         </div>
